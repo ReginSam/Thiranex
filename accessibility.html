@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility statement detailing the commitment to WCAG 2.1 compliance and accessibility standards.">
+    <meta name="robots" content="index, follow">
+    <title>Accessibility Statement - Portfolio | Your Name</title>
+    <link rel="canonical" href="https://yourportfolio.com/accessibility.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Your Name Portfolio">
+                <span aria-hidden="true">YN</span>
+            </a>
+            <button 
+                class="nav-toggle" 
+                aria-label="Toggle navigation menu" 
+                aria-expanded="false" 
+                aria-controls="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="projects.html" role="menuitem">Projects</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <article aria-labelledby="page-title">
+            <h1 id="page-title">Accessibility Statement</h1>
+
+            <section aria-labelledby="commitment-title">
+                <h2 id="commitment-title">Commitment to Accessibility</h2>
+                <p>
+                    I am committed to ensuring digital accessibility for people with disabilities. I am continually improving 
+                    the user experience for everyone, and applying the relevant accessibility standards.
+                </p>
+                <p>
+                    This website has been designed to conform to WCAG 2.1 Level AA accessibility standards. The website is built using 
+                    semantic HTML5, ARIA landmarks, and keyboard navigation support to ensure all users, regardless of their abilities, 
+                    can access and interact with the content.
+                </p>
+            </section>
+
+            <section aria-labelledby="features-title">
+                <h2 id="features-title">Accessibility Features</h2>
+                <div role="region" aria-labelledby="features-list-title">
+                    <h3 id="features-list-title" class="sr-only">List of Accessibility Features</h3>
+                    <ul>
+                        <li><strong>Semantic HTML5:</strong> All pages use semantic HTML elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> for proper document structure.</li>
+                        <li><strong>ARIA Labels and Roles:</strong> Comprehensive ARIA implementation including <code>aria-label</code>, <code>aria-labelledby</code>, <code>aria-describedby</code>, and appropriate roles for enhanced screen reader support.</li>
+                        <li><strong>Keyboard Navigation:</strong> Full keyboard accessibility with visible focus indicators. All interactive elements are accessible via keyboard.</li>
+                        <li><strong>Skip Links:</strong> Navigation skip links to bypass repetitive content and jump directly to main content.</li>
+                        <li><strong>Color Contrast:</strong> Text and interactive elements meet WCAG AA color contrast ratios (minimum 4.5:1 for normal text).</li>
+                        <li><strong>Responsive Design:</strong> Mobile-friendly layout that adapts to all screen sizes and orientations.</li>
+                        <li><strong>Form Accessibility:</strong> All form fields have associated labels, clear error messages, and helpful hints.</li>
+                        <li><strong>Image Descriptions:</strong> Meaningful alt text for all images to provide context for screen reader users.</li>
+                        <li><strong>Readable Typography:</strong> Sufficient font sizes, line height, and letter spacing for readability.</li>
+                        <li><strong>Screen Reader Optimized:</strong> Content structure and live regions for dynamic content updates.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section aria-labelledby="wcag-conformance-title">
+                <h2 id="wcag-conformance-title">WCAG 2.1 Conformance</h2>
+                <p>
+                    This website conforms to WCAG 2.1 level AA. WCAG stands for Web Content Accessibility Guidelines 
+                    and is the international standard for web accessibility. It is developed through the W3C (World Wide Web Consortium) 
+                    process in cooperation with individuals and organizations around the world.
+                </p>
+                <p>
+                    The guidelines are organized around four principles often called POUR:
+                </p>
+                <dl>
+                    <dt>Perceivable</dt>
+                    <dd>Information and user interface components must be presentable to users in ways they can perceive.</dd>
+
+                    <dt>Operable</dt>
+                    <dd>User interface components and navigation must be operable through various input methods including keyboard navigation.</dd>
+
+                    <dt>Understandable</dt>
+                    <dd>Information and user interface operations must be understandable to all users.</dd>
+
+                    <dt>Robust</dt>
+                    <dd>Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</dd>
+                </dl>
+            </section>
+
+            <section aria-labelledby="testing-title">
+                <h2 id="testing-title">Testing and Validation</h2>
+                <p>This website has been tested using:</p>
+                <ul>
+                    <li>Automated testing tools: Axe DevTools, WAVE, and Lighthouse</li>
+                    <li>Screen readers: NVDA, JAWS, and Safari VoiceOver</li>
+                    <li>Keyboard navigation testing</li>
+                    <li>Manual WCAG 2.1 compliance review</li>
+                    <li>Color contrast verification tools</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="limitations-title">
+                <h2 id="limitations-title">Known Limitations</h2>
+                <p>While I have made extensive efforts to make this website accessible, some limitations may remain:</p>
+                <ul>
+                    <li>User-submitted content in comments may not meet accessibility standards</li>
+                    <li>External linked content is not under my control and may not be accessible</li>
+                    <li>Some legacy or third-party scripts may have accessibility limitations</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="feedback-title">
+                <h2 id="feedback-title">Feedback and Support</h2>
+                <p>
+                    I welcome your feedback on the accessibility of this website. Please let me know if you encounter accessibility barriers:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:accessibility@example.com">accessibility@example.com</a></li>
+                    <li><strong>Contact Form:</strong> <a href="contact.html">Use the contact form</a> and select "Accessibility Feedback" as the subject</li>
+                    <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></li>
+                </ul>
+                <p>
+                    I will make efforts to respond to accessibility feedback within 5 business days and will work to resolve any issues.
+                </p>
+            </section>
+
+            <section aria-labelledby="standards-title">
+                <h2 id="standards-title">Standards and Regulations</h2>
+                <p>This website aims to comply with:</p>
+                <ul>
+                    <li>WCAG 2.1 Level AA (World Wide Web Consortium Web Content Accessibility Guidelines)</li>
+                    <li>Section 508 of the Rehabilitation Act (United States)</li>
+                    <li>EN 301 549 (European accessibility standard)</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="resources-title">
+                <h2 id="resources-title">Accessibility Resources</h2>
+                <p>For more information about web accessibility, please visit:</p>
+                <ul>
+                    <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">Web Accessibility Initiative (WAI)</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer">WCAG 2.1 Quick Reference</a></li>
+                    <li><a href="https://www.deque.com/axe/" target="_blank" rel="noopener noreferrer">Axe: Accessibility Engine</a></li>
+                    <li><a href="https://www.w3.org/WAI/fundamentals/" target="_blank" rel="noopener noreferrer">Accessibility Fundamentals</a></li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="updates-title">
+                <h2 id="updates-title">Statement Updates</h2>
+                <p>
+                    This accessibility statement was last updated on June 8, 2026. 
+                    I will review and update this statement regularly to reflect improvements and changes made to the website.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <section aria-labelledby="footer-about">
+                <h2 id="footer-about">About This Site</h2>
+                <p>This portfolio is built with semantic HTML5 and WCAG 2.1 AA compliance in mind, demonstrating accessibility best practices.</p>
+            </section>
+
+            <section aria-labelledby="footer-links">
+                <h2 id="footer-links">Quick Links</h2>
+                <nav role="navigation" aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section aria-labelledby="footer-social">
+                <h2 id="footer-social">Connect With Me</h2>
+                <ul role="list">
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="accessibility.html">Accessibility Statement</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

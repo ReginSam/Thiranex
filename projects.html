@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my portfolio of accessible web projects demonstrating semantic HTML5 and WCAG compliance.">
+    <meta name="keywords" content="projects, portfolio, web development, accessibility">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Projects - Portfolio | Your Name">
+    <meta property="og:description" content="View my web development projects with accessibility focus.">
+    <meta property="og:type" content="website">
+    <title>Projects - Portfolio | Your Name</title>
+    <link rel="canonical" href="https://yourportfolio.com/projects.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Your Name Portfolio">
+                <span aria-hidden="true">YN</span>
+            </a>
+            <button 
+                class="nav-toggle" 
+                aria-label="Toggle navigation menu" 
+                aria-expanded="false" 
+                aria-controls="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="projects.html" role="menuitem" aria-current="page">Projects</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Page Title -->
+        <section aria-labelledby="page-title">
+            <h1 id="page-title">My Projects</h1>
+            <p class="lead">A showcase of accessible web projects built with semantic HTML5 and WCAG 2.1 compliance.</p>
+        </section>
+
+        <!-- Filter Options -->
+        <section aria-labelledby="filter-title">
+            <h2 id="filter-title" class="sr-only">Filter Projects</h2>
+            <div class="filter-group" role="group" aria-label="Filter projects by category">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+                <button class="filter-btn" data-filter="web-app" aria-pressed="false">Web Apps</button>
+                <button class="filter-btn" data-filter="website" aria-pressed="false">Websites</button>
+                <button class="filter-btn" data-filter="tools" aria-pressed="false">Tools</button>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section aria-labelledby="projects-title">
+            <h2 id="projects-title" class="sr-only">Projects List</h2>
+            <div class="projects-grid" role="list">
+                <!-- Project 1 -->
+                <article id="project-1" class="project-card" role="listitem" data-category="web-app">
+                    <div class="project-content">
+                        <h3>Accessible Blog Platform</h3>
+                        <p class="project-date">Completed: January 2024</p>
+                        <p class="project-description">
+                            A fully accessible blogging platform demonstrating semantic HTML5 structure, 
+                            comprehensive ARIA implementation, and keyboard navigation support. Features include 
+                            accessible image galleries, form components, and comment threads.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="metric">
+                                <strong>Lighthouse Score:</strong>
+                                <span aria-label="98 out of 100">98/100</span>
+                            </span>
+                            <span class="metric">
+                                <strong>WCAG Level:</strong>
+                                <span aria-label="WCAG 2.1 AA">AA</span>
+                            </span>
+                        </div>
+                        <ul aria-label="Technologies used">
+                            <li>HTML5</li>
+                            <li>CSS3 (Grid & Flexbox)</li>
+                            <li>JavaScript ES6</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" aria-label="Visit Accessible Blog Platform live site">View Live</a>
+                            <a href="#" class="btn btn-secondary" aria-label="View source code on GitHub">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article id="project-2" class="project-card" role="listitem" data-category="web-app">
+                    <div class="project-content">
+                        <h3>E-commerce Dashboard</h3>
+                        <p class="project-date">Completed: September 2023</p>
+                        <p class="project-description">
+                            A comprehensive admin dashboard with accessible data tables, charts, and real-time notifications. 
+                            Built with React and featuring extensive ARIA labels, keyboard navigation through complex UI patterns, 
+                            and screen reader optimization.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="metric">
+                                <strong>Lighthouse Score:</strong>
+                                <span aria-label="95 out of 100">95/100</span>
+                            </span>
+                            <span class="metric">
+                                <strong>WCAG Level:</strong>
+                                <span aria-label="WCAG 2.1 AA">AA</span>
+                            </span>
+                        </div>
+                        <ul aria-label="Technologies used">
+                            <li>React 18</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Chart.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" aria-label="Visit E-commerce Dashboard live site">View Live</a>
+                            <a href="#" class="btn btn-secondary" aria-label="View E-commerce Dashboard source code">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article id="project-3" class="project-card" role="listitem" data-category="web-app">
+                    <div class="project-content">
+                        <h3>Accessible Task Manager</h3>
+                        <p class="project-date">Completed: June 2023</p>
+                        <p class="project-description">
+                            Real-time task management application with full keyboard navigation support and screen reader accessibility. 
+                            Features drag-and-drop with keyboard alternatives, accessible modals, and comprehensive form validation with 
+                            clear error messaging.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="metric">
+                                <strong>Lighthouse Score:</strong>
+                                <span aria-label="96 out of 100">96/100</span>
+                            </span>
+                            <span class="metric">
+                                <strong>WCAG Level:</strong>
+                                <span aria-label="WCAG 2.1 AA">AA</span>
+                            </span>
+                        </div>
+                        <ul aria-label="Technologies used">
+                            <li>Vue.js 3</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Socket.io</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" aria-label="Visit Accessible Task Manager live site">View Live</a>
+                            <a href="#" class="btn btn-secondary" aria-label="View Task Manager source code">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article id="project-4" class="project-card" role="listitem" data-category="website">
+                    <div class="project-content">
+                        <h3>Corporate Website Redesign</h3>
+                        <p class="project-date">Completed: March 2023</p>
+                        <p class="project-description">
+                            Redesigned corporate website focusing on accessibility as a core requirement. Implemented semantic HTML5, 
+                            proper heading hierarchy, skip links, and accessible rich components. Achieved WCAG 2.1 AA compliance 
+                            while maintaining modern design aesthetics.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="metric">
+                                <strong>Lighthouse Score:</strong>
+                                <span aria-label="94 out of 100">94/100</span>
+                            </span>
+                            <span class="metric">
+                                <strong>WCAG Level:</strong>
+                                <span aria-label="WCAG 2.1 AA">AA</span>
+                            </span>
+                        </div>
+                        <ul aria-label="Technologies used">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>WAVE Tested</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" aria-label="Visit Corporate Website live site">View Live</a>
+                            <a href="#" class="btn btn-secondary" aria-label="View Corporate Website source code">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article id="project-5" class="project-card" role="listitem" data-category="tools">
+                    <div class="project-content">
+                        <h3>Color Contrast Checker</h3>
+                        <p class="project-date">Completed: December 2022</p>
+                        <p class="project-description">
+                            Open-source accessibility tool for checking WCAG color contrast ratios. Built with accessibility in mind, 
+                            featuring keyboard-navigable color pickers, accessible form inputs, and clear contrast ratio feedback with 
+                            WCAG compliance indicators.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="metric">
+                                <strong>Lighthouse Score:</strong>
+                                <span aria-label="100 out of 100">100/100</span>
+                            </span>
+                            <span class="metric">
+                                <strong>WCAG Level:</strong>
+                                <span aria-label="WCAG 2.1 AAA">AAA</span>
+                            </span>
+                        </div>
+                        <ul aria-label="Technologies used">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Open Source</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" aria-label="Visit Color Contrast Checker live tool">View Live</a>
+                            <a href="#" class="btn btn-secondary" aria-label="View Contrast Checker GitHub repository">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article id="project-6" class="project-card" role="listitem" data-category="tools">
+                    <div class="project-content">
+                        <h3>A11y Validator Browser Extension</h3>
+                        <p class="project-date">Completed: August 2022</p>
+                        <p class="project-description">
+                            Browser extension for on-the-fly accessibility validation during development. Scans pages for WCAG violations, 
+                            provides actionable suggestions, and integrates with popular browsers. The extension itself is fully accessible 
+                            with keyboard shortcuts and clear reporting.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="metric">
+                                <strong>Lighthouse Score:</strong>
+                                <span aria-label="99 out of 100">99/100</span>
+                            </span>
+                            <span class="metric">
+                                <strong>WCAG Level:</strong>
+                                <span aria-label="WCAG 2.1 AA">AA</span>
+                            </span>
+                        </div>
+                        <ul aria-label="Technologies used">
+                            <li>JavaScript</li>
+                            <li>Chrome API</li>
+                            <li>axe-core</li>
+                            <li>React</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary" aria-label="Install A11y Validator from Chrome Web Store">View Live</a>
+                            <a href="#" class="btn btn-secondary" aria-label="View A11y Validator source code">View Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section aria-labelledby="cta-title" class="cta-section">
+            <h2 id="cta-title">Interested in Working Together?</h2>
+            <p>I'm always open to new accessibility-focused projects. Let's create something amazing.</p>
+            <a href="contact.html" class="cta-button" aria-label="Contact me to discuss your project">Get in Touch</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <section aria-labelledby="footer-about">
+                <h2 id="footer-about">About This Site</h2>
+                <p>This portfolio is built with semantic HTML5 and WCAG 2.1 AA compliance in mind, demonstrating accessibility best practices.</p>
+            </section>
+
+            <section aria-labelledby="footer-links">
+                <h2 id="footer-links">Quick Links</h2>
+                <nav role="navigation" aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section aria-labelledby="footer-social">
+                <h2 id="footer-social">Connect With Me</h2>
+                <ul role="list">
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="accessibility.html">Accessibility Statement</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

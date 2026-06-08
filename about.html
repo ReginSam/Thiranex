@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about my background, experience, and passion for creating accessible web experiences.">
+    <meta name="keywords" content="about, developer, experience, background">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="About - Portfolio | Your Name">
+    <meta property="og:description" content="Learn about my background and experience in web development.">
+    <meta property="og:type" content="website">
+    <title>About - Portfolio | Your Name</title>
+    <link rel="canonical" href="https://yourportfolio.com/about.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Your Name Portfolio">
+                <span aria-hidden="true">YN</span>
+            </a>
+            <button 
+                class="nav-toggle" 
+                aria-label="Toggle navigation menu" 
+                aria-expanded="false" 
+                aria-controls="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" aria-current="page">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="projects.html" role="menuitem">Projects</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Page Title -->
+        <section aria-labelledby="page-title">
+            <h1 id="page-title">About Me</h1>
+        </section>
+
+        <!-- Biography Section -->
+        <section aria-labelledby="bio-title">
+            <h2 id="bio-title">My Journey</h2>
+            <article>
+                <p>
+                    I'm a passionate full-stack developer dedicated to creating accessible, semantic web experiences. 
+                    With over 5 years of professional experience, I've specialized in building inclusive digital 
+                    products that serve users of all abilities.
+                </p>
+                <p>
+                    My journey into web development began with a deep appreciation for the web's universal nature. 
+                    I believe that accessibility is not an afterthought but a core principle of great design and development. 
+                    Every project I undertake is built with WCAG 2.1 compliance as a foundation.
+                </p>
+            </article>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section aria-labelledby="experience-title">
+            <h2 id="experience-title">Professional Experience</h2>
+            <ol role="list" class="timeline">
+                <li role="listitem">
+                    <article class="timeline-item">
+                        <h3>Senior Front-end Developer</h3>
+                        <p class="meta">Tech Corp Inc. | 2021 - Present</p>
+                        <p>
+                            Led the accessibility initiative across all product lines, improving WCAG compliance 
+                            from 60% to 98%. Mentored junior developers on semantic HTML and ARIA implementation.
+                        </p>
+                    </article>
+                </li>
+
+                <li role="listitem">
+                    <article class="timeline-item">
+                        <h3>Full-stack Developer</h3>
+                        <p class="meta">Digital Solutions Ltd. | 2019 - 2021</p>
+                        <p>
+                            Developed responsive web applications using React and Node.js. 
+                            Implemented comprehensive keyboard navigation and screen reader support.
+                        </p>
+                    </article>
+                </li>
+
+                <li role="listitem">
+                    <article class="timeline-item">
+                        <h3>Junior Web Developer</h3>
+                        <p class="meta">StartUp Hub | 2018 - 2019</p>
+                        <p>
+                            Started career building static websites and contributed to dynamic web applications. 
+                            First exposure to accessibility standards and best practices.
+                        </p>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Education Section -->
+        <section aria-labelledby="education-title">
+            <h2 id="education-title">Education & Certifications</h2>
+            <div role="list">
+                <article role="listitem" class="education-item">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="meta">University Name | 2018</p>
+                </article>
+
+                <article role="listitem" class="education-item">
+                    <h3>WCAG 2.1 Accessibility Specialist</h3>
+                    <p class="meta">Web Accessibility Certification | 2021</p>
+                </article>
+
+                <article role="listitem" class="education-item">
+                    <h3>Advanced React Development</h3>
+                    <p class="meta">Online Course Platform | 2022</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section aria-labelledby="tech-title">
+            <h2 id="tech-title">Technologies & Tools</h2>
+            <div class="tech-grid" role="list">
+                <div role="listitem">
+                    <h3>Languages</h3>
+                    <ul aria-label="Programming languages">
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+                <div role="listitem">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul aria-label="Frontend frameworks and libraries">
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                    </ul>
+                </div>
+                <div role="listitem">
+                    <h3>Databases & Tools</h3>
+                    <ul aria-label="Database and development tools">
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                <div role="listitem">
+                    <h3>Accessibility Tools</h3>
+                    <ul aria-label="Accessibility testing and tools">
+                        <li>Axe DevTools</li>
+                        <li>WAVE</li>
+                        <li>NVDA Screen Reader</li>
+                        <li>Lighthouse</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section aria-labelledby="cta-title" class="cta-section">
+            <h2 id="cta-title">Let's Work Together</h2>
+            <p>Interested in collaborating on accessible web projects? I'd love to hear from you.</p>
+            <a href="contact.html" class="cta-button" aria-label="Contact me for project inquiries">Get in Touch</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <section aria-labelledby="footer-about">
+                <h2 id="footer-about">About This Site</h2>
+                <p>This portfolio is built with semantic HTML5 and WCAG 2.1 AA compliance in mind, demonstrating accessibility best practices.</p>
+            </section>
+
+            <section aria-labelledby="footer-links">
+                <h2 id="footer-links">Quick Links</h2>
+                <nav role="navigation" aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section aria-labelledby="footer-social">
+                <h2 id="footer-social">Connect With Me</h2>
+                <ul role="list">
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="accessibility.html">Accessibility Statement</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

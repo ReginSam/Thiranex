@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing projects, skills, and professional experience in web development and design.">
+    <meta name="keywords" content="portfolio, web developer, projects, skills, experience">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfolio - Your Name">
+    <meta property="og:description" content="Personal portfolio showcasing projects, skills, and professional experience.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1a73e8">
+    <title>Home - Portfolio | Your Name</title>
+    <link rel="canonical" href="https://yourportfolio.com/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-current="page">
+                <span aria-label="Your Name Portfolio">YN</span>
+            </a>
+            <button 
+                class="nav-toggle" 
+                aria-label="Toggle navigation menu" 
+                aria-expanded="false" 
+                aria-controls="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" aria-current="page">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="projects.html" role="menuitem">Projects</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section aria-labelledby="hero-title" class="hero">
+            <div class="hero-content">
+                <h1 id="hero-title">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle">Full-stack developer crafting accessible, semantic web experiences</p>
+                <a href="contact.html" class="cta-button" aria-label="Get in touch with me">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section aria-labelledby="featured-projects-title">
+            <h2 id="featured-projects-title">Featured Projects</h2>
+            <div class="projects-grid" role="list">
+                <article class="project-card" role="listitem">
+                    <h3>Accessible Blog Platform</h3>
+                    <p>A WCAG 2.1 AAA compliant blogging platform built with semantic HTML5.</p>
+                    <ul aria-label="Technologies used">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a href="projects.html#project-1" aria-label="View details of Accessible Blog Platform project">View Project</a>
+                </article>
+
+                <article class="project-card" role="listitem">
+                    <h3>E-commerce Dashboard</h3>
+                    <p>Fully accessible admin dashboard with comprehensive ARIA implementation.</p>
+                    <ul aria-label="Technologies used">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                    <a href="projects.html#project-2" aria-label="View details of E-commerce Dashboard project">View Project</a>
+                </article>
+
+                <article class="project-card" role="listitem">
+                    <h3>Accessible Task Manager</h3>
+                    <p>Real-time task management app with full keyboard navigation support.</p>
+                    <ul aria-label="Technologies used">
+                        <li>Vue.js</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <a href="projects.html#project-3" aria-label="View details of Accessible Task Manager project">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section aria-labelledby="skills-title">
+            <h2 id="skills-title">Core Skills</h2>
+            <div class="skills-container" role="list">
+                <div class="skill-category" role="listitem">
+                    <h3>Front-end Development</h3>
+                    <ul aria-label="Front-end technologies">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category" role="listitem">
+                    <h3>Accessibility</h3>
+                    <ul aria-label="Accessibility standards and practices">
+                        <li>WCAG 2.1</li>
+                        <li>ARIA Implementation</li>
+                        <li>Screen Reader Testing</li>
+                        <li>Keyboard Navigation</li>
+                    </ul>
+                </div>
+                <div class="skill-category" role="listitem">
+                    <h3>Back-end Development</h3>
+                    <ul aria-label="Back-end technologies">
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <section aria-labelledby="footer-about">
+                <h2 id="footer-about">About This Site</h2>
+                <p>This portfolio is built with semantic HTML5 and WCAG 2.1 AA compliance in mind, demonstrating accessibility best practices.</p>
+            </section>
+
+            <section aria-labelledby="footer-links">
+                <h2 id="footer-links">Quick Links</h2>
+                <nav role="navigation" aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section aria-labelledby="footer-social">
+                <h2 id="footer-social">Connect With Me</h2>
+                <ul role="list">
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="accessibility.html">Accessibility Statement</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
