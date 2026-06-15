@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeNavigation();
     initializeForm();
     initializeFilters();
+    initializeTheme();
     updateYear();
     setupSkipLinks();
 });
@@ -346,6 +347,76 @@ if ('IntersectionObserver' in window) {
     document.querySelectorAll('img[data-src]').forEach(img => {
         imageObserver.observe(img);
     });
+}
+
+// ============================================================================
+// Theme Toggle
+// ============================================================================
+
+function initializeTheme() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    if (!themeToggle) return;
+
+    // Get saved theme preference from localStorage or use system preference
+    function getSavedTheme() {
+        const saved = localStorage.getItem('theme-preference');
+        if (saved) return saved;
+        
+        // Check system preference
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        return 'light';
+    }
+
+    // Set theme and update UI
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            html.setAttribute('data-theme', 'dark');
+            themeToggle.querySelector('.theme-icon').textContent = '☀️';
+            localStorage.setItem('theme-preference', 'dark');
+        } else {
+            html.removeAttribute('data-theme');
+            themeToggle.querySelector('.theme-icon').textContent = '🌙';
+            localStorage.setItem('theme-preference', 'light');
+        }
+    }
+
+    // Initialize with saved theme
+    const savedTheme = getSavedTheme();
+    setTheme(savedTheme);
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', function () {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+        
+        // Announce theme change to screen readers
+        const announcement = newTheme === 'dark' ? 'Dark theme enabled' : 'Light theme enabled';
+        announceToScreenReader(announcement);
+    });
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        const newTheme = e.matches ? 'dark' : 'light';
+        setTheme(newTheme);
+    });
+}
+
+// Screen reader announcement helper
+function announceToScreenReader(message) {
+    const announcement = document.createElement('div');
+    announcement.setAttribute('role', 'status');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.className = 'sr-only';
+    announcement.textContent = message;
+    document.body.appendChild(announcement);
+    
+    // Remove announcement after screen reader reads it
+    setTimeout(() => announcement.remove(), 1000);
 }
 
 // ============================================================================
